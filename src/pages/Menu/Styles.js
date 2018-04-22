@@ -13,7 +13,7 @@ export default StyleSheet.create({
         height: 80,
         padding: 10,
         margin: 16,
-        backgroundColor: '#D3D3D3',
+        backgroundColor: 'rgba(34, 198, 160, 0.3)',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
     },
@@ -33,15 +33,22 @@ export default StyleSheet.create({
         flexDirection: 'row'
     },
     logo: {
-        flex:1,
+        flex: 1,
         height: undefined,
         width: undefined
     },
     imageContainer: {
         height: 150,
-        padding: 30,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.2
+        padding: 30
+    },
+    menuHeader: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#22c6a0'
+    },
+    headerWrapper: {
+        marginTop: 20,
+        marginBottom: 5,
+        marginLeft: 16,
     }
 });
