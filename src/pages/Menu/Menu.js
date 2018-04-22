@@ -25,12 +25,12 @@ class Menu extends Component {
     }
 
     onPressRow(id) {
-        this.props.setSelectedItem(id);
+        this.props.onMenuItemPress(id);
     }
 
     renderRow(item) {
         return (
-            <TouchableHighlight onPress={this.onPressRow.bind(item.id)} activeOpacity={0.5} underlayColor="#fff">
+            <TouchableHighlight onPress={() => this.onPressRow(item.id)} activeOpacity={0.5} underlayColor="#fff">
                 <View key={item.id} style={styles.row}>
                     <View style={styles.itemHeaderRow}>
                         <Text style={styles.itemTitle}>{item.item} - {item.cost}</Text>
